@@ -5,6 +5,9 @@ import "fmt"
 type CardStack interface {
 	StackCards()
 	UnstackCards()
+	ContainsCard(card string)
+	GoToCard(card string)
+	DeckSize()
 }
 type cardStack struct {
 	stack BasicStack[string]
@@ -75,6 +78,18 @@ func (c *cardStack) UnstackCards() {
 	for c.stack.Size() > 0 {
 		fmt.Println(c.stack.Pop())
 	}
+}
+
+func (c *cardStack) ContainsCard(card string) {
+	fmt.Println(c.stack.Contains(card))
+}
+
+func (c *cardStack) GoToCard(card string) {
+	fmt.Println(c.stack.Access(card))
+}
+
+func (c *cardStack) DeckSize() {
+	fmt.Println(c.stack.Size())
 }
 
 func NewCardStack() CardStack {

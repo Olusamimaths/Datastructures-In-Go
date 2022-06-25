@@ -3,9 +3,11 @@ package main
 import "github.com/olusamimaths/datastructures/stack"
 
 func main() {
-	myStack := stack.NewCardStack()
+	cardStack := stack.NewCardStack()
 
-	myStack.StackCards()
-
-	myStack.UnstackCards()
+	cardStack.StackCards()
+	cardStack.ContainsCard("Ace of Spades")
+	cardStack.ContainsCard("Spade of Spades")
+	cardStack.DeckSize()
+	// cardStack.UnstackCards()
 }
