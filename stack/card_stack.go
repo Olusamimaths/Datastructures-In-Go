@@ -28,7 +28,7 @@ func (c *cardStack) StackCards() {
 	c.stack.Push("Queen of Spades")
 	c.stack.Push("King of Spades")
 
-	//c.stack the diamond suit
+	//stack the diamond suit
 	c.stack.Push("Ace of Diamonds")
 	c.stack.Push("2 of Diamonds")
 	c.stack.Push("3 of Diamonds")
@@ -43,7 +43,7 @@ func (c *cardStack) StackCards() {
 	c.stack.Push("Queen of Diamonds")
 	c.stack.Push("King of Diamonds")
 
-	//c.stack the club suit
+	//stack the club suit
 	c.stack.Push("Ace of Clubs")
 	c.stack.Push("2 of Clubs")
 	c.stack.Push("3 of Clubs")
@@ -58,7 +58,7 @@ func (c *cardStack) StackCards() {
 	c.stack.Push("Queen of Clubs")
 	c.stack.Push("King of Clubs")
 
-	//c.stack the heart suit
+	//stack the heart suit
 	c.stack.Push("Ace of Hearts")
 	c.stack.Push("2 of Hearts")
 	c.stack.Push("3 of Hearts")
